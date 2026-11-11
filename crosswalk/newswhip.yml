@@ -1,0 +1,21 @@
+provider: newswhip
+apis_io: https://apis.io/providers/newswhip/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - articles
+    properties:
+      name: headline
+      description: excerpt
+      id: uuid
+      source_id: source
+      categories:
+      - keywords
+      - topics
+      author: authors
+      language: language
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/newswhip-openapi-original.json#POST /articles

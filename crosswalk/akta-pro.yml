@@ -1,0 +1,13 @@
+provider: akta-pro
+apis_io: https://apis.io/providers/akta-pro/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/akta-pro-docs-openapi.json#GET /v1/news
+    - openapi/_original/akta-pro-openapi.yml#GET /v1/news

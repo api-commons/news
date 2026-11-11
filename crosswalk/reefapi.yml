@@ -1,0 +1,28 @@
+provider: reefapi
+apis_io: https://apis.io/providers/reefapi/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    - stories
+    - article
+    properties:
+      id: id
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /bing/v1/news
+    - openapi/_original/reefapi-openapi.json#POST /finance/v1/news
+    - openapi/_original/reefapi-openapi.json#POST /finance/v1/v1/market/news
+    - openapi/_original/reefapi-openapi.json#POST /finance/v1/v2/market/news
+    - openapi/_original/reefapi-openapi.json#POST /hackernews/v1/stories
+  news_source:
+    path_segment:
+    - sources
+    properties:
+      category: category
+      country: country
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/reefapi-openapi.json#POST /news-intel/v1/sources

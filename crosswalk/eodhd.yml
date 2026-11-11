@@ -1,0 +1,25 @@
+provider: eodhd
+apis_io: https://apis.io/providers/eodhd/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    properties:
+      name: title
+      published_at: date
+      body: content
+      categories: tags
+      sentiment: sentiment
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/eodhd-financial-data-openapi.yml#GET /news
+  news_source:
+    path_segment:
+    - sources
+    properties:
+      name: name
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/eodhd-financial-data-openapi.yml#GET /sanctions/sources

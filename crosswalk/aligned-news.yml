@@ -1,0 +1,21 @@
+provider: aligned-news
+apis_io: https://apis.io/providers/aligned-news/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - stories
+    properties:
+      name: title
+      description: summary
+      published_at: publishedAt
+      id: id
+      body: body
+      categories:
+      - section
+      - tags
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/aligned-news-openapi.yml#GET /stories
+    - openapi/_original/aligned-news-openapi.yml#GET /stories/{id}

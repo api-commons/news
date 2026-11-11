@@ -1,0 +1,19 @@
+provider: spaceflight-news-api
+apis_io: https://apis.io/providers/spaceflight-news-api/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - articles
+    properties:
+      name: title
+      description: summary
+      published_at: published_at
+      id: id
+      image_url: image_url
+      author: authors
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/spaceflight-news-api-openapi.yml#GET /articles/
+    - openapi/_original/spaceflight-news-api-openapi.yml#GET /articles/{id}/

@@ -1,0 +1,20 @@
+provider: itsgloria-ai
+apis_io: https://apis.io/providers/itsgloria-ai/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    - articles
+    properties:
+      id: id
+      author: author
+      sentiment: sentiment
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/itsgloria-ai-openapi.json#GET /articles
+    - openapi/_original/itsgloria-ai-openapi.json#GET /articles/{article_id}
+    - openapi/_original/itsgloria-ai-openapi.json#GET /news
+    - openapi/_original/itsgloria-ai-openapi.json#GET /news/{id}
+    - openapi/_original/itsgloria-ai-openapi.yml#GET /articles

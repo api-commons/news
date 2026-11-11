@@ -1,0 +1,32 @@
+provider: cryptocompare
+apis_io: https://apis.io/providers/cryptocompare/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    properties:
+      name: TITLE
+      id:
+      - ID
+      - GUID
+      source_id: SOURCE_ID
+      body: BODY
+      categories: KEYWORDS
+      image_url: IMAGE_URL
+      author: AUTHORS
+      language: LANG
+      sentiment: SENTIMENT
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/cryptocompare-min-api-openapi.yml#GET /v2/news/
+  news_source:
+    path_segment:
+    - feeds
+    properties:
+      name: name
+      language: lang
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/cryptocompare-min-api-openapi.yml#GET /news/feeds

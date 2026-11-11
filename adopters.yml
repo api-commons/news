@@ -1,0 +1,168 @@
+context: news
+generated: '2026-11-11'
+adopters:
+- provider: akta-pro
+  apis_io: https://apis.io/providers/akta-pro/
+  crosswalk: crosswalk/akta-pro.yml
+  concepts:
+  - news_article
+- provider: aligned-news
+  apis_io: https://apis.io/providers/aligned-news/
+  crosswalk: crosswalk/aligned-news.yml
+  concepts:
+  - news_article
+- provider: apitube
+  apis_io: https://apis.io/providers/apitube/
+  crosswalk: crosswalk/apitube.yml
+  concepts:
+  - news_article
+- provider: aylien
+  apis_io: https://apis.io/providers/aylien/
+  crosswalk: crosswalk/aylien.yml
+  concepts:
+  - news_article
+- provider: bing-news
+  apis_io: https://apis.io/providers/bing-news/
+  crosswalk: crosswalk/bing-news.yml
+  concepts:
+  - news_article
+- provider: bitvore
+  apis_io: https://apis.io/providers/bitvore/
+  crosswalk: crosswalk/bitvore.yml
+  concepts:
+  - news_article
+- provider: cryptocompare
+  apis_io: https://apis.io/providers/cryptocompare/
+  crosswalk: crosswalk/cryptocompare.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: eod-historical
+  apis_io: https://apis.io/providers/eod-historical/
+  crosswalk: crosswalk/eod-historical.yml
+  concepts:
+  - news_article
+- provider: eodhd
+  apis_io: https://apis.io/providers/eodhd/
+  crosswalk: crosswalk/eodhd.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: epfl
+  apis_io: https://apis.io/providers/epfl/
+  crosswalk: crosswalk/epfl.yml
+  concepts:
+  - news_article
+- provider: factiva
+  apis_io: https://apis.io/providers/factiva/
+  crosswalk: crosswalk/factiva.yml
+  concepts:
+  - news_article
+- provider: finnhub
+  apis_io: https://apis.io/providers/finnhub/
+  crosswalk: crosswalk/finnhub.yml
+  concepts:
+  - news_article
+- provider: gnews
+  apis_io: https://apis.io/providers/gnews/
+  crosswalk: crosswalk/gnews.yml
+  concepts:
+  - news_article
+- provider: itsgloria-ai
+  apis_io: https://apis.io/providers/itsgloria-ai/
+  crosswalk: crosswalk/itsgloria-ai.yml
+  concepts:
+  - news_article
+- provider: johns-hopkins-university
+  apis_io: https://apis.io/providers/johns-hopkins-university/
+  crosswalk: crosswalk/johns-hopkins-university.yml
+  concepts:
+  - news_article
+- provider: mashable
+  apis_io: https://apis.io/providers/mashable/
+  crosswalk: crosswalk/mashable.yml
+  concepts:
+  - news_article
+- provider: mediastack
+  apis_io: https://apis.io/providers/mediastack/
+  crosswalk: crosswalk/mediastack.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: news-api
+  apis_io: https://apis.io/providers/news-api/
+  crosswalk: crosswalk/news-api.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: newsapi
+  apis_io: https://apis.io/providers/newsapi/
+  crosswalk: crosswalk/newsapi.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: newswhip
+  apis_io: https://apis.io/providers/newswhip/
+  crosswalk: crosswalk/newswhip.yml
+  concepts:
+  - news_article
+- provider: nordic-financial-news
+  apis_io: https://apis.io/providers/nordic-financial-news/
+  crosswalk: crosswalk/nordic-financial-news.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: opoint
+  apis_io: https://apis.io/providers/opoint/
+  crosswalk: crosswalk/opoint.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: reefapi
+  apis_io: https://apis.io/providers/reefapi/
+  crosswalk: crosswalk/reefapi.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: refinitiv
+  apis_io: https://apis.io/providers/refinitiv/
+  crosswalk: crosswalk/refinitiv.yml
+  concepts:
+  - news_article
+- provider: s1-dev
+  apis_io: https://apis.io/providers/s1-dev/
+  crosswalk: crosswalk/s1-dev.yml
+  concepts:
+  - news_article
+- provider: serper
+  apis_io: https://apis.io/providers/serper/
+  crosswalk: crosswalk/serper.yml
+  concepts:
+  - news_article
+- provider: spaceflight-news-api
+  apis_io: https://apis.io/providers/spaceflight-news-api/
+  crosswalk: crosswalk/spaceflight-news-api.yml
+  concepts:
+  - news_article
+- provider: the-news-api
+  apis_io: https://apis.io/providers/the-news-api/
+  crosswalk: crosswalk/the-news-api.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: thenewsapi
+  apis_io: https://apis.io/providers/thenewsapi/
+  crosswalk: crosswalk/thenewsapi.yml
+  concepts:
+  - news_article
+  - news_source
+- provider: twitter-x
+  apis_io: https://apis.io/providers/twitter-x/
+  crosswalk: crosswalk/twitter-x.yml
+  concepts:
+  - news_article
+- provider: us-army
+  apis_io: https://apis.io/providers/us-army/
+  crosswalk: crosswalk/us-army.yml
+  concepts:
+  - news_article

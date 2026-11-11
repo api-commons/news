@@ -1,0 +1,24 @@
+provider: the-news-api
+apis_io: https://apis.io/providers/the-news-api/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - headlines
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/the-news-api-openapi.yml#GET /news/headlines
+  news_source:
+    path_segment:
+    - sources
+    properties:
+      category: categories
+      language:
+      - language
+      - locale
+      domain: domain
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/the-news-api-openapi.yml#GET /news/sources

@@ -1,0 +1,19 @@
+provider: gnews
+apis_io: https://apis.io/providers/gnews/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - top-headlines
+    properties:
+      name: title
+      description: description
+      published_at: publishedAt
+      source_id: source
+      body: content
+      image_url: image
+      language: lang
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/gnews-openapi.yml#GET /top-headlines

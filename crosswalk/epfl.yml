@@ -1,0 +1,20 @@
+provider: epfl
+apis_io: https://apis.io/providers/epfl/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    properties:
+      name: title
+      id: id
+      body: text
+      categories: category
+      author: authors
+      language: lang
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/epfl-actu.yaml#GET /channels/{id}/news/
+    - openapi/_original/epfl-actu.yaml#GET /news/
+    - openapi/_original/epfl-actu.yaml#GET /news/{news__pk}/

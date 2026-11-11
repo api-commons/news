@@ -1,0 +1,17 @@
+provider: eod-historical
+apis_io: https://apis.io/providers/eod-historical/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    properties:
+      name: title
+      published_at: date
+      body: content
+      categories: tags
+      sentiment: sentiment
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/openapi.yaml#GET /news

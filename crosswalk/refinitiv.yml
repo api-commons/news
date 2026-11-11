@@ -1,0 +1,16 @@
+provider: refinitiv
+apis_io: https://apis.io/providers/refinitiv/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - headlines
+    - stories
+    properties:
+      name: title
+      body: body
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/refinitiv-data-platform-openapi.yml#GET /data/news/v1/headlines
+    - openapi/_original/refinitiv-data-platform-openapi.yml#GET /data/news/v1/stories/{storyId}

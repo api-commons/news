@@ -1,0 +1,33 @@
+provider: newsapi
+apis_io: https://apis.io/providers/newsapi/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - everything
+    - top-headlines
+    properties:
+      name: title
+      description: description
+      published_at: publishedAt
+      source_id: source
+      body: content
+      image_url: urlToImage
+      author: author
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/newsapi-newsapi-openapi.yml#GET /everything
+    - openapi/_original/newsapi-newsapi-openapi.yml#GET /top-headlines
+  news_source:
+    path_segment:
+    - sources
+    properties:
+      name: name
+      category: category
+      language: language
+      country: country
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/newsapi-newsapi-openapi.yml#GET /top-headlines/sources

@@ -1,0 +1,285 @@
+context: news
+name: News
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - News
+  - News API
+  - Journalism
+  - Media Monitoring
+  - News Aggregation
+  - Media Intelligence
+  providers_with_harvested_openapi: 73
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded:
+  news_article:
+    adanos-market-sentiment-api: /news/stocks/v1/search searches stock tickers
+duplicates:
+  factiva:
+  - dow-jones
+shared_specs: {}
+concepts:
+  news_article:
+    segments_seen:
+      news: 15
+      articles: 8
+      stories: 5
+      top-headlines: 5
+      everything: 4
+      article: 3
+      headlines: 3
+      search: 2
+    providers_exposing: 31
+    providers_with_readable_schema: 31
+    operations:
+    - operation: GET collection
+      providers: 26
+      share: 0.839
+      tier: core
+    - operation: GET item
+      providers: 10
+      share: 0.323
+      tier: extended
+    - operation: POST collection
+      providers: 8
+      share: 0.258
+      tier: extended
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.032
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 24
+      share: 0.774
+      type: string
+      spellings:
+      - title
+      - headline
+      - name
+      - TITLE
+    - name: description
+      tier: core
+      providers: 18
+      share: 0.581
+      type: string
+      spellings:
+      - summary
+      - description
+      - snippet
+      - excerpt
+    - name: published_at
+      tier: core
+      providers: 18
+      share: 0.581
+      type: string
+      spellings:
+      - publishedAt
+      - published_at
+      - date
+      - publishedDate
+      - datetime
+      - published_date
+    - name: id
+      tier: core
+      providers: 16
+      share: 0.516
+      type: string
+      spellings:
+      - id
+      - uuid
+      - article.id
+      - ID
+      - GUID
+    - name: source_id
+      tier: core
+      providers: 16
+      share: 0.516
+      type: string
+      spellings:
+      - source
+      - sourceName
+      - source.id
+      - SOURCE_ID
+      - publisher
+    - name: body
+      tier: extended
+      providers: 15
+      share: 0.484
+      type: string
+      spellings:
+      - content
+      - body
+      - text
+      - BODY
+    - name: categories
+      tier: extended
+      providers: 13
+      share: 0.419
+      type: array
+      spellings:
+      - category
+      - tags
+      - keywords
+      - categories
+      - topics
+      - section
+      - KEYWORDS
+    - name: image_url
+      tier: extended
+      providers: 13
+      share: 0.419
+      type: string
+      spellings:
+      - image
+      - urlToImage
+      - imageUrl
+      - image_url
+      - IMAGE_URL
+    - name: author
+      tier: extended
+      providers: 12
+      share: 0.387
+      type: string
+      spellings:
+      - author
+      - authors
+      - AUTHORS
+    - name: language
+      tier: extended
+      providers: 8
+      share: 0.258
+      type: string
+      spellings:
+      - language
+      - lang
+      - LANG
+      - locale
+    - name: sentiment
+      tier: extended
+      providers: 7
+      share: 0.226
+      type: object
+      spellings:
+      - sentiment
+      - SENTIMENT
+    long_tail_count: 410
+    long_tail_sample:
+    - url
+    - type
+    - hl
+    - limit
+    - article_type
+    - content_type
+    - country
+    - debug
+    - entities
+    - gl
+    - has_video
+    - offset
+    - published_at_end
+    - published_at_start
+    - q
+    - query
+    - sort_by
+    - source_url
+    - subtitle
+    - symbols
+    - themes
+    - timestamp
+    - topic_id
+    - updated_at
+    - active
+    - and
+    - api_key
+    - appid
+    - article_count
+    - article_ids
+    - article_locations
+    - article_types
+    - association_tier
+    - author_id
+    - author_name
+    - autocorrect
+    - available_at
+    - baskets
+    - body_html
+    - branch
+  news_source:
+    segments_seen:
+      sources: 9
+      feeds: 1
+    providers_exposing: 10
+    providers_with_readable_schema: 10
+    operations:
+    - operation: GET collection
+      providers: 9
+      share: 0.9
+      tier: core
+    - operation: POST collection
+      providers: 1
+      share: 0.1
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 7
+      share: 0.7
+      type: string
+      spellings:
+      - name
+    - name: category
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - category
+      - categories
+    - name: language
+      tier: core
+      providers: 6
+      share: 0.6
+      type: string
+      spellings:
+      - language
+      - locale
+      - lang
+    - name: country
+      tier: core
+      providers: 5
+      share: 0.5
+      type: string
+      spellings:
+      - country
+    - name: id
+      tier: extended
+      providers: 4
+      share: 0.4
+      type: string
+      spellings:
+      - id
+    - name: domain
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - domain
+    long_tail_count: 9
+    long_tail_sample:
+    - description
+    - source_id
+    - error
+    - id_site
+    - id_source
+    - img
+    - key
+    - ok
+    - source_type

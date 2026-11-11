@@ -1,0 +1,19 @@
+provider: s1-dev
+apis_io: https://apis.io/providers/s1-dev/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    properties:
+      name: title
+      description: snippet
+      published_at: published_date
+      body: content
+      image_url: image
+      language: language
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/s1-dev-openapi.yml#POST /news
+    - openapi/_original/search1api-openapi.json#POST /news

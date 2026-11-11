@@ -1,0 +1,17 @@
+provider: factiva
+apis_io: https://apis.io/providers/factiva/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - articles
+    properties:
+      name: title
+      published_at: publishedDate
+      id: id
+      source_id: publisher
+      body: content
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/dow-jones-advanced-screening-and-monitoring-api-openapi.json#GET /articles/{article_id}

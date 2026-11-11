@@ -1,0 +1,2086 @@
+{
+ "cohort_size": 73,
+ "unreadable": [],
+ "concepts": {
+  "news_article": {
+   "adanos-market-sentiment-api": {
+    "segments": [
+     "search"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ticker": "string",
+     "name": "string",
+     "type": null,
+     "exchange": null,
+     "sector": null,
+     "country": null,
+     "aliases": "array",
+     "summary": "object"
+    },
+    "evidence": [
+     "openapi/_original/adanos-market-sentiment-api-openapi.json#GET /news/stocks/v1/search"
+    ]
+   },
+   "akta-pro": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "string",
+     "total": "integer",
+     "count": "integer",
+     "limit": "integer",
+     "offset": "integer",
+     "credits_consumed": "number",
+     "data": "array"
+    },
+    "evidence": [
+     "openapi/_original/akta-pro-docs-openapi.json#GET /v1/news",
+     "openapi/_original/akta-pro-openapi.yml#GET /v1/news"
+    ]
+   },
+   "aligned-news": {
+    "segments": [
+     "stories"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "slug": "string",
+     "section": "string",
+     "summary": "string",
+     "body": "string",
+     "url": "string",
+     "tags": "array",
+     "publishedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/aligned-news-openapi.yml#GET /stories",
+     "openapi/_original/aligned-news-openapi.yml#GET /stories/{id}"
+    ]
+   },
+   "apitube": {
+    "segments": [
+     "everything",
+     "top-headlines",
+     "article"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "limit": "integer",
+     "page": "integer",
+     "has_next_pages": "boolean",
+     "next_page": "string",
+     "has_previous_page": "boolean",
+     "previous_page": "string",
+     "path": "string",
+     "request_id": "string",
+     "export": "object",
+     "id": "integer",
+     "href": "string",
+     "published_at": "string",
+     "title": "string",
+     "description": "string",
+     "body": "string",
+     "body_html": "string",
+     "language": "string",
+     "image": "string",
+     "author": "object",
+     "source": "object",
+     "categories": "array",
+     "topics": "array",
+     "industries": "array",
+     "entities": "array",
+     "sentiment": "object",
+     "summary": "array",
+     "keywords": "array",
+     "media": "array",
+     "story": "object",
+     "is_breaking": "boolean",
+     "is_duplicate": "boolean",
+     "is_free": "boolean",
+     "read_time": "integer",
+     "words_count": "integer",
+     "sentences_count": "integer",
+     "paragraphs_count": "integer",
+     "characters_count": "integer",
+     "results": "array",
+     "facets": "object",
+     "highlighting": "object",
+     "headlines": "array",
+     "meta": "object",
+     "user_input": "object",
+     "prompt": "string",
+     "per_page": "integer",
+     "sort.by": "string",
+     "sort.order": "string",
+     "article.id": "string",
+     "ignore.title": "string",
+     "title_starts_with": "string",
+     "title_ends_with": "string",
+     "title_pattern": "string",
+     "published_at.start": "string",
+     "published_at.end": "string",
+     "language.code": "string",
+     "ignore.language.code": "string",
+     "source.country.code": "string",
+     "ignore.source.country.code": "string",
+     "source.rank.opr.min": "integer",
+     "source.rank.opr.max": "integer",
+     "source.id": "string",
+     "ignore.source.id": "string",
+     "source.domain": "string",
+     "ignore.source.domain": "string",
+     "source.bias": "string",
+     "ignore.source.bias": "string",
+     "is_premium_source": "integer",
+     "is_verified_source": "integer",
+     "category.id": "string",
+     "ignore.category.id": "string",
+     "topic.id": "string",
+     "ignore.topic.id": "string",
+     "industry.id": "string",
+     "ignore.industry.id": "string",
+     "entity.id": "string",
+     "ignore.entity.id": "string",
+     "entity.sentiment.polarity": "string",
+     "entity.sentiment.score.min": "number",
+     "entity.sentiment.score.max": "number",
+     "person.name": "string",
+     "ignore.person.name": "string",
+     "organization.name": "string",
+     "ignore.organization.name": "string",
+     "location.name": "string",
+     "ignore.location.name": "string",
+     "brand.name": "string",
+     "ignore.brand.name": "string",
+     "disaster.name": "string",
+     "ignore.disaster.name": "string",
+     "disease.name": "string",
+     "ignore.disease.name": "string",
+     "event.name": "string",
+     "ignore.event.name": "string",
+     "sport.name": "string",
+     "ignore.sport.name": "string",
+     "event.type": "string",
+     "event.category": "string",
+     "ignore.event.type": "string",
+     "sentiment.overall.score": "number",
+     "sentiment.overall.score.min": "number",
+     "sentiment.overall.score.max": "number",
+     "sentiment.overall.polarity": "string",
+     "sentiment.title.score": "number",
+     "sentiment.title.score.min": "number",
+     "sentiment.title.score.max": "number",
+     "sentiment.title.polarity": "string",
+     "sentiment.body.score": "number",
+     "sentiment.body.score.min": "number",
+     "sentiment.body.score.max": "number",
+     "sentiment.body.polarity": "string",
+     "sentiment.mixed": "integer",
+     "sentiment.consistent": "integer",
+     "is_clickbait": "integer",
+     "sentiment_gap.min": "number",
+     "sentiment_gap.max": "number",
+     "media.images.count": "integer",
+     "media.images.count.min": "integer",
+     "media.images.count.max": "integer",
+     "media.images.width.min": "integer",
+     "media.images.width.max": "integer",
+     "media.images.height.min": "integer",
+     "media.images.height.max": "integer",
+     "media.videos.count": "integer",
+     "media.videos.count.min": "integer",
+     "media.videos.count.max": "integer",
+     "has_image": "integer",
+     "has_video": "integer",
+     "has_hq_images": "integer",
+     "is_media_rich": "integer",
+     "is_landscape_media": "integer",
+     "is_portrait_media": "integer",
+     "has_multiple_images": "integer",
+     "has_fullhd_images": "integer",
+     "has_4k_images": "integer",
+     "has_mobile_optimized_images": "integer",
+     "is_instagram_ready": "integer",
+     "is_twitter_card_ready": "integer",
+     "has_consistent_image_sizes": "integer",
+     "has_thumbnail": "integer",
+     "has_social_share_image": "integer",
+     "has_mixed_media": "integer",
+     "readability.fk_grade": "number",
+     "readability.fk_grade.min": "number",
+     "readability.fk_grade.max": "number",
+     "readability.ease": "number",
+     "readability.ease.min": "number",
+     "readability.ease.max": "number",
+     "readability.ari": "number",
+     "readability.ari.min": "number",
+     "readability.ari.max": "number",
+     "readability.difficulty": "string",
+     "readability.audience": "string",
+     "readability.age": "integer",
+     "readability.age.min": "integer",
+     "readability.age.max": "integer",
+     "is_easy_read": "integer",
+     "is_difficult_read": "integer",
+     "read_time.min": "integer",
+     "read_time.max": "integer",
+     "is_long_read": "integer",
+     "is_short_read": "integer",
+     "is_quick_read": "integer",
+     "is_medium_read": "integer",
+     "is_deep_dive": "integer",
+     "location.bbox": "string",
+     "has_location_geo": "integer",
+     "location.lat": "number",
+     "location.lng": "number",
+     "location.radius": "number",
+     "location.radius.min": "number",
+     "is_paywall": "integer",
+     "is_high_quality": "integer",
+     "author.id": "string",
+     "ignore.author.id": "string",
+     "author.name": "string",
+     "ignore.author.name": "string",
+     "has_author": "integer",
+     "facet": "string",
+     "facet.field": "string",
+     "facet.limit": "integer",
+     "facet.mincount": "integer",
+     "facet.range": "string",
+     "facet.range.field": "string",
+     "facet.range.start": "string",
+     "facet.range.end": "string",
+     "facet.range.gap": "string",
+     "hl": "string",
+     "hl.fl": "string",
+     "hl.fragsize": "integer",
+     "hl.snippets": "integer",
+     "hl.tag.pre": "string",
+     "hl.tag.post": "string",
+     "fl": "string",
+     "debug": "string",
+     "api_key": "string"
+    },
+    "evidence": [
+     "openapi/_original/apitube-apex-openapi.json#GET /v1/news/everything",
+     "openapi/_original/apitube-apex-openapi.json#GET /v1/news/top-headlines",
+     "openapi/_original/apitube-api-openapi.json#POST /v1/news/article",
+     "openapi/_original/apitube-api-openapi.json#POST /v1/news/everything",
+     "openapi/_original/apitube-api-openapi.json#POST /v1/news/top-headlines"
+    ]
+   },
+   "aylien": {
+    "segments": [
+     "stories"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "next_page_cursor": "string",
+     "stories": "array",
+     "published_at.end": "string",
+     "published_at.start": "string",
+     "warnings": "array",
+     "$and": "array",
+     "$or": "array",
+     "$not": "array"
+    },
+    "evidence": [
+     "openapi/_original/news-api.yaml#GET /stories",
+     "openapi/_original/news-api.yaml#POST /stories"
+    ]
+   },
+   "bing-news": {
+    "segments": [
+     "search",
+     "news"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "_type": "string",
+     "id": "string",
+     "readLink": "string",
+     "relatedTopics": "array",
+     "sort": "array",
+     "totalEstimatedMatches": "integer",
+     "value": "array",
+     "webSearchUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/bing-news-search-openapi.json#GET /news",
+     "openapi/_original/bing-news-search-openapi.json#GET /news/search"
+    ]
+   },
+   "bitvore": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "articleLocations": "array",
+     "articleType": "string",
+     "availableAt": "string",
+     "esgSentiment": "number",
+     "excerpt": "string",
+     "key": "string",
+     "matchedArticleOrgs": "array",
+     "matchedOrgs": "array",
+     "phrases": "array",
+     "previewImageUrl": "string",
+     "publishedAt": "string",
+     "referencedOrgHierarchy": "array",
+     "referencedOrgs": "array",
+     "sentiment": "number",
+     "signals": "array",
+     "significance": "string",
+     "similarityClusterId": "string",
+     "sourceLocation": "string",
+     "sourceName": "string",
+     "sourceUrl": "string",
+     "themes": "array",
+     "title": "string",
+     "articleTypes": "array",
+     "dateType": "string",
+     "endDate": "string",
+     "orgField": "array",
+     "orgScope": "object",
+     "pageNo": "integer",
+     "pageSize": "integer",
+     "similarity": "string",
+     "startDate": "string",
+     "text": "string",
+     "cusips": "array",
+     "locations": "array",
+     "matchedCusips": "array",
+     "sectors": "array",
+     "cusip": "array",
+     "fips": "array",
+     "includeCusips": "boolean",
+     "location": "array",
+     "portfolioId": "integer",
+     "sector": "array"
+    },
+    "evidence": [
+     "openapi/_original/bitvore-corporate-openapi.yml#GET /v2/corp/news",
+     "openapi/_original/bitvore-corporate-openapi.yml#POST /v2/corp/news",
+     "openapi/_original/bitvore-corporate-swagger.json#GET /v2/corp/news",
+     "openapi/_original/bitvore-corporate-swagger.json#POST /v2/corp/news",
+     "openapi/_original/bitvore-muni-openapi.yml#GET /v2/muni/news",
+     "openapi/_original/bitvore-muni-openapi.yml#POST /v2/muni/news",
+     "openapi/_original/bitvore-muni-swagger.json#GET /v2/muni/news",
+     "openapi/_original/bitvore-muni-swagger.json#POST /v2/muni/news"
+    ]
+   },
+   "cryptocompare": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "TYPE": "string",
+     "ID": "integer",
+     "GUID": "string",
+     "PUBLISHED_ON": "integer",
+     "IMAGE_URL": "string",
+     "TITLE": "string",
+     "SUBTITLE": "string",
+     "AUTHORS": "string",
+     "URL": "string",
+     "SOURCE_ID": "integer",
+     "BODY": "string",
+     "KEYWORDS": "string",
+     "LANG": "string",
+     "UPVOTES": "integer",
+     "DOWNVOTES": "integer",
+     "SCORE": "integer",
+     "SENTIMENT": "string",
+     "STATUS": "string",
+     "CREATED_ON": "integer",
+     "SOURCE_DATA": "object",
+     "CATEGORY_DATA": "array"
+    },
+    "evidence": [
+     "openapi/_original/cryptocompare-min-api-openapi.yml#GET /v2/news/"
+    ]
+   },
+   "dow-jones": {
+    "segments": [
+     "articles"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "originalId": "string",
+     "publisher": "string",
+     "riskTags": "array",
+     "publishedDate": "string",
+     "title": "string",
+     "content": "string"
+    },
+    "evidence": [
+     "openapi/_original/dow-jones-advanced-screening-and-monitoring-api-openapi.json#GET /articles/{article_id}"
+    ]
+   },
+   "eod-historical": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "date": "string",
+     "title": "string",
+     "content": "string",
+     "link": "string",
+     "symbols": "array",
+     "tags": "array",
+     "sentiment": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yaml#GET /news"
+    ]
+   },
+   "eodhd": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "date": "string",
+     "title": "string",
+     "content": "string",
+     "link": "string",
+     "symbols": "array",
+     "tags": "array",
+     "sentiment": "object"
+    },
+    "evidence": [
+     "openapi/_original/eodhd-financial-data-openapi.yml#GET /news"
+    ]
+   },
+   "epfl": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "lang": "string",
+     "title": "string",
+     "subtitle": "string",
+     "text": "string",
+     "order": "integer",
+     "publish_date": "string",
+     "visual_url": "string",
+     "thumbnail_url": "string",
+     "visual_description": "string",
+     "short_vimeo_video_id": "string",
+     "short_vimeo_video_credits": "string",
+     "carousel_images": "array",
+     "video": "string",
+     "channel": "object",
+     "category": "object",
+     "news_url": "string",
+     "themes": "array",
+     "publics": "array",
+     "faculties": "array",
+     "projects": "array",
+     "authors": "array",
+     "links": "array",
+     "funding": "string",
+     "references": "string",
+     "is_under_cc_license": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/epfl-actu.yaml#GET /channels/{id}/news/",
+     "openapi/_original/epfl-actu.yaml#GET /news/",
+     "openapi/_original/epfl-actu.yaml#GET /news/{news__pk}/"
+    ]
+   },
+   "finnhub": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "category": "string",
+     "datetime": "integer",
+     "headline": "string",
+     "id": "integer",
+     "image": "string",
+     "related": "string",
+     "source": "string",
+     "summary": "string",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/finnhub-openapi.yml#GET /news",
+     "openapi/_original/finnhub-swagger-original.json#GET /news"
+    ]
+   },
+   "gnews": {
+    "segments": [
+     "top-headlines"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "title": "string",
+     "description": "string",
+     "content": "string",
+     "url": "string",
+     "image": "string",
+     "publishedAt": "string",
+     "lang": "string",
+     "source": "object"
+    },
+    "evidence": [
+     "openapi/_original/gnews-openapi.yml#GET /top-headlines"
+    ]
+   },
+   "itsgloria-ai": {
+    "segments": [
+     "news",
+     "articles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "signal": "string",
+     "sentiment": "string",
+     "sentiment_value": "number",
+     "timestamp": "number",
+     "feed_categories": "array",
+     "short_context": "string",
+     "long_context": "string",
+     "sources": "array",
+     "author": "string",
+     "tokens": "array",
+     "tweet_url": "string",
+     "narrative_id": "string",
+     "data": "object",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/itsgloria-ai-openapi.json#GET /articles",
+     "openapi/_original/itsgloria-ai-openapi.json#GET /articles/{article_id}",
+     "openapi/_original/itsgloria-ai-openapi.json#GET /news",
+     "openapi/_original/itsgloria-ai-openapi.json#GET /news/{id}",
+     "openapi/_original/itsgloria-ai-openapi.yml#GET /articles",
+     "openapi/_original/itsgloria-ai-openapi.yml#GET /articles/{article_id}",
+     "openapi/_original/itsgloria-ai-openapi.yml#GET /news",
+     "openapi/_original/itsgloria-ai-openapi.yml#GET /news/{id}"
+    ]
+   },
+   "johns-hopkins-university": {
+    "segments": [
+     "articles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "_embedded": "object",
+     "_links": "object",
+     "page": "integer",
+     "per_page": "integer",
+     "return_count": "integer",
+     "total_available": "integer",
+     "id": "integer",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/johns-hopkins-university-hub-api-openapi.yml#GET /articles",
+     "openapi/_original/johns-hopkins-university-hub-api-openapi.yml#GET /articles/{id}",
+     "openapi/_original/johns-hopkins-university-hub-api.yaml#GET /articles",
+     "openapi/_original/johns-hopkins-university-hub-api.yaml#GET /articles/{id}"
+    ]
+   },
+   "mashable": {
+    "segments": [
+     "top-headlines",
+     "everything"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "source": "object",
+     "author": "string",
+     "title": "string",
+     "description": "string",
+     "url": "string",
+     "urlToImage": "string",
+     "publishedAt": "string",
+     "content": "string"
+    },
+    "evidence": [
+     "openapi/_original/mashable-openapi.yml#GET /everything",
+     "openapi/_original/mashable-openapi.yml#GET /top-headlines"
+    ]
+   },
+   "mediastack": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "author": "string",
+     "title": "string",
+     "description": "string",
+     "url": "string",
+     "source": "string",
+     "image": "string",
+     "category": "string",
+     "language": "string",
+     "country": "string",
+     "published_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/mediastack-openapi.yml#GET /news"
+    ]
+   },
+   "news-api": {
+    "segments": [
+     "everything",
+     "top-headlines"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "source": "object",
+     "author": "string",
+     "title": "string",
+     "description": "string",
+     "url": "string",
+     "urlToImage": "string",
+     "publishedAt": "string",
+     "content": "string"
+    },
+    "evidence": [
+     "openapi/_original/news-api-openapi.yml#GET /everything",
+     "openapi/_original/news-api-openapi.yml#GET /top-headlines"
+    ]
+   },
+   "newsapi": {
+    "segments": [
+     "everything",
+     "top-headlines"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "source": "object",
+     "author": "string",
+     "title": "string",
+     "description": "string",
+     "url": "string",
+     "urlToImage": "string",
+     "publishedAt": "string",
+     "content": "string"
+    },
+    "evidence": [
+     "openapi/_original/newsapi-newsapi-openapi.yml#GET /everything",
+     "openapi/_original/newsapi-newsapi-openapi.yml#GET /top-headlines"
+    ]
+   },
+   "newswhip": {
+    "segments": [
+     "articles"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "delta_time": "integer",
+     "recent_fb_counts": "integer",
+     "recent_tw_counts": "integer",
+     "relatedStories": "array",
+     "fb_data": "object",
+     "tw_data": "object",
+     "li_data": "object",
+     "pi_data": "object",
+     "predicted_interactions": "integer",
+     "predicted_timestamp": "integer",
+     "uuid": "string",
+     "publication_timestamp": "integer",
+     "link": "string",
+     "headline": "string",
+     "excerpt": "string",
+     "keywords": "string",
+     "source": "object",
+     "image_link": "string",
+     "has_video": "boolean",
+     "nw_score": "number",
+     "max_nw_score": "number",
+     "topics": "array",
+     "authors": null,
+     "entities": "array",
+     "filters": "array",
+     "from": "integer",
+     "to": "integer",
+     "language": "string",
+     "sort_by": "string",
+     "video_only": "boolean",
+     "default_fields": "array",
+     "size": "integer",
+     "find_related": "boolean",
+     "content_type": "string",
+     "search_full_text": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/newswhip-openapi-original.json#POST /articles"
+    ]
+   },
+   "nordic-financial-news": {
+    "segments": [
+     "articles",
+     "stories"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "article_url": "string",
+     "content_type": "string",
+     "published_at": "string",
+     "updated_at": "string",
+     "category": "object",
+     "source": "object",
+     "company_ids": "array",
+     "country": "string",
+     "event_id": "string",
+     "name": "string",
+     "ticker": "string",
+     "is_primary": "boolean",
+     "association_tier": "string",
+     "summary": "string",
+     "article_count": "integer",
+     "article_ids": "array"
+    },
+    "evidence": [
+     "openapi/_original/nordic-financial-news-openapi-original.yml#GET /api/v1/articles",
+     "openapi/_original/nordic-financial-news-openapi-original.yml#GET /api/v1/articles/{id}",
+     "openapi/_original/nordic-financial-news-openapi-original.yml#GET /api/v1/companies/{identifier}/articles",
+     "openapi/_original/nordic-financial-news-openapi-original.yml#GET /api/v1/companies/{identifier}/stories",
+     "openapi/_original/nordic-financial-news-openapi-original.yml#GET /api/v1/stories",
+     "openapi/_original/nordic-financial-news-openapi-original.yml#GET /api/v1/stories/{id}",
+     "openapi/_original/nordic-financial-news-openapi.yml#GET /api/v1/articles",
+     "openapi/_original/nordic-financial-news-openapi.yml#GET /api/v1/articles/{id}",
+     "openapi/_original/nordic-financial-news-openapi.yml#GET /api/v1/companies/{identifier}/articles",
+     "openapi/_original/nordic-financial-news-openapi.yml#GET /api/v1/companies/{identifier}/stories",
+     "openapi/_original/nordic-financial-news-openapi.yml#GET /api/v1/stories",
+     "openapi/_original/nordic-financial-news-openapi.yml#GET /api/v1/stories/{id}"
+    ]
+   },
+   "opoint": {
+    "segments": [
+     "articles"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "url": "string",
+     "subject": "string",
+     "type": null,
+     "active": "integer",
+     "baskets": "array",
+     "isCreatedFromApp": "boolean",
+     "editable": "boolean",
+     "max_age": "integer",
+     "has_push_subscription": "boolean",
+     "schedule": null,
+     "lastSent": "integer",
+     "id_site": "integer",
+     "id_article": "integer",
+     "xmltext": "string",
+     "stimestamp": "integer",
+     "matchinfo": "string",
+     "topicId": "integer",
+     "status": "string",
+     "wordCount": "integer",
+     "sentiment": "integer",
+     "hitHeadline": "integer",
+     "hitArticle": "integer",
+     "hitPicture": "integer",
+     "swot": "string",
+     "articleType": "string",
+     "comment": "string",
+     "insertDate": "string",
+     "dominance": "integer",
+     "scoredBy": "integer",
+     "scoredAt": "string",
+     "headline": [
+      "string",
+      "null"
+     ],
+     "timestamp": "string",
+     "mediatype": "string",
+     "author": "string",
+     "summary": "string",
+     "header": "string",
+     "siteName": "string",
+     "sourceName": "string",
+     "sourceLang": "string",
+     "sourceUrl": "string",
+     "estimatedReadership": "integer",
+     "scoredValues": "array",
+     "documents": "integer",
+     "document": "array",
+     "debug": "object",
+     "first_timestamp": "integer",
+     "last_timestamp": "integer",
+     "context": "string",
+     "search_start": "integer",
+     "range_count": "integer",
+     "range_start": "integer",
+     "range_end": "integer",
+     "count": "integer",
+     "cacheage": "integer",
+     "cputime": "integer",
+     "host": "string",
+     "compiledate": "string",
+     "branch": "string",
+     "notimeout": "boolean",
+     "wikinames": "object",
+     "wikidescriptions": "object",
+     "search_matches": "array",
+     "matches_table": "object",
+     "watch_id": "integer",
+     "sort_groups": "object",
+     "covered": "integer",
+     "next_from": "integer",
+     "articles": "array",
+     "linkobs": "boolean",
+     "html": "boolean",
+     "transform": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/opoint-openapi-original.yml#GET /alerts/{id}/articles/",
+     "openapi/_original/opoint-openapi-original.yml#GET /analytics/articles",
+     "openapi/_original/opoint-openapi-original.yml#POST /alerts/{id}/articles/",
+     "openapi/_original/opoint-openapi-original.yml#POST /analytics/articles",
+     "openapi/_original/opoint-openapi-original.yml#POST /search/articles/",
+     "openapi/_original/opoint-openapi-original.yml#PUT /analytics/articles",
+     "openapi/_original/opoint-openapi.yml#GET /alerts/{id}/articles/",
+     "openapi/_original/opoint-openapi.yml#GET /analytics/articles",
+     "openapi/_original/opoint-openapi.yml#POST /alerts/{id}/articles/",
+     "openapi/_original/opoint-openapi.yml#POST /analytics/articles",
+     "openapi/_original/opoint-openapi.yml#POST /search/articles/",
+     "openapi/_original/opoint-openapi.yml#PUT /analytics/articles"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "news",
+     "stories",
+     "article"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "q": "string",
+     "mkt": "string",
+     "gl": "string",
+     "hl": "string",
+     "count": "string",
+     "freshness": "string",
+     "query": "string",
+     "symbol": "string",
+     "list": "string",
+     "limit": "string",
+     "offset": "string",
+     "hydrate": "string",
+     "url": "string",
+     "id": "string",
+     "sport": "string",
+     "league": "string",
+     "appid": "string",
+     "maxlength": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /bing/v1/news",
+     "openapi/_original/reefapi-openapi.json#POST /finance/v1/news",
+     "openapi/_original/reefapi-openapi.json#POST /finance/v1/v1/market/news",
+     "openapi/_original/reefapi-openapi.json#POST /finance/v1/v2/market/news",
+     "openapi/_original/reefapi-openapi.json#POST /hackernews/v1/stories",
+     "openapi/_original/reefapi-openapi.json#POST /medium/v1/article",
+     "openapi/_original/reefapi-openapi.json#POST /sports-data/v1/news",
+     "openapi/_original/reefapi-openapi.json#POST /steam-games/v1/news"
+    ]
+   },
+   "refinitiv": {
+    "segments": [
+     "headlines",
+     "stories"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "storyId": "string",
+     "title": "string",
+     "newsItem": "string",
+     "sourceCode": "string",
+     "versionCreated": "string",
+     "body": "string"
+    },
+    "evidence": [
+     "openapi/_original/refinitiv-data-platform-openapi.yml#GET /data/news/v1/headlines",
+     "openapi/_original/refinitiv-data-platform-openapi.yml#GET /data/news/v1/stories/{storyId}"
+    ]
+   },
+   "s1-dev": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "link": "string",
+     "snippet": "string",
+     "content": "string",
+     "published_date": "string",
+     "kind": "string",
+     "stars": "integer",
+     "language": "string",
+     "num_comments": "integer",
+     "story_url": "string",
+     "points": "integer",
+     "query": "string",
+     "search_service": "string",
+     "max_results": "integer",
+     "crawl_results": "integer",
+     "image": "boolean",
+     "include_sites": "array",
+     "exclude_sites": "array",
+     "time_range": "string"
+    },
+    "evidence": [
+     "openapi/_original/s1-dev-openapi.yml#POST /news",
+     "openapi/_original/search1api-openapi.json#POST /news"
+    ]
+   },
+   "serper": {
+    "segments": [
+     "news"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "link": "string",
+     "snippet": "string",
+     "date": "string",
+     "source": "string",
+     "imageUrl": "string",
+     "position": "integer",
+     "q": "string",
+     "gl": "string",
+     "hl": "string",
+     "num": "integer",
+     "page": "integer",
+     "tbs": "string",
+     "autocorrect": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/serper-google-search-api-openapi.yml#POST /news"
+    ]
+   },
+   "spaceflight-news-api": {
+    "segments": [
+     "articles"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "title": "string",
+     "authors": "array",
+     "url": "string",
+     "image_url": "string",
+     "news_site": "string",
+     "summary": "string",
+     "published_at": "string",
+     "updated_at": "string",
+     "featured": "boolean",
+     "launches": "array",
+     "events": "array"
+    },
+    "evidence": [
+     "openapi/_original/spaceflight-news-api-openapi.yml#GET /articles/",
+     "openapi/_original/spaceflight-news-api-openapi.yml#GET /articles/{id}/"
+    ]
+   },
+   "the-news-api": {
+    "segments": [
+     "headlines"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "general": "array",
+     "business": "array",
+     "sports": "array",
+     "tech": "array",
+     "science": "array",
+     "health": "array",
+     "entertainment": "array",
+     "politics": "array",
+     "food": "array",
+     "travel": "array"
+    },
+    "evidence": [
+     "openapi/_original/the-news-api-openapi.yml#GET /news/headlines"
+    ]
+   },
+   "thenewsapi": {
+    "segments": [
+     "headlines"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "uuid": "string",
+     "title": "string",
+     "description": "string",
+     "keywords": "string",
+     "snippet": "string",
+     "url": "string",
+     "image_url": "string",
+     "language": "string",
+     "published_at": "string",
+     "source": "string",
+     "categories": "array",
+     "relevance_score": "number",
+     "locale": "string",
+     "similar": "array"
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#GET /news/headlines"
+    ]
+   },
+   "twitter-x": {
+    "segments": [
+     "search",
+     "news"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "category": "string",
+     "cluster_posts_results": "array",
+     "contexts": "object",
+     "disclaimer": "string",
+     "hook": "string",
+     "keywords": "array",
+     "last_updated_at_ms": "string",
+     "name": "string",
+     "rest_id": "string",
+     "summary": "string"
+    },
+    "evidence": [
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/news/search",
+     "openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/news/{id}"
+    ]
+   },
+   "us-army": {
+    "segments": [
+     "article",
+     "articles",
+     "news"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "summary": "string",
+     "body": "string",
+     "author": "string",
+     "publishedDate": "string",
+     "updatedDate": "string",
+     "tags": "array",
+     "imageUrl": "string",
+     "url": "string",
+     "sourceOrg": "string",
+     "headline": "string",
+     "source": "string"
+    },
+    "evidence": [
+     "openapi/_original/us-army-public-openapi.yml#GET /article/{id}",
+     "openapi/_original/us-army-public-openapi.yml#GET /articles",
+     "openapi/_original/us-army-public-openapi.yml#GET /news"
+    ]
+   }
+  },
+  "news_source": {
+   "cryptocompare": {
+    "segments": [
+     "feeds"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "key": "string",
+     "name": "string",
+     "lang": "string",
+     "img": "string"
+    },
+    "evidence": [
+     "openapi/_original/cryptocompare-min-api-openapi.yml#GET /news/feeds"
+    ]
+   },
+   "eodhd": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string"
+    },
+    "evidence": [
+     "openapi/_original/eodhd-financial-data-openapi.yml#GET /sanctions/sources"
+    ]
+   },
+   "mediastack": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "category": "string",
+     "country": "string",
+     "language": "string",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/mediastack-openapi.yml#GET /sources"
+    ]
+   },
+   "news-api": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "url": "string",
+     "category": "string",
+     "language": "string",
+     "country": "string"
+    },
+    "evidence": [
+     "openapi/_original/news-api-openapi.yml#GET /top-headlines/sources"
+    ]
+   },
+   "newsapi": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "url": "string",
+     "category": "string",
+     "language": "string",
+     "country": "string"
+    },
+    "evidence": [
+     "openapi/_original/newsapi-newsapi-openapi.yml#GET /top-headlines/sources"
+    ]
+   },
+   "newscatcher": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "message": "string",
+     "sources": "array",
+     "user_input": "object",
+     "lang": null,
+     "countries": null,
+     "theme": null,
+     "name_source": "string",
+     "domain_url": "string",
+     "logo": "string",
+     "additional_info": "object",
+     "predefined_sources": null,
+     "source_name": null,
+     "source_url": null,
+     "include_additional_info": "boolean",
+     "is_news_domain": "boolean",
+     "news_domain_type": "string",
+     "news_type": null,
+     "from_rank": "integer",
+     "to_rank": "integer"
+    },
+    "evidence": [
+     "openapi/_original/newscatcher-local-news-api-openapi.yml#POST /api/sources",
+     "openapi/_original/newscatcher-news-api-openapi.yml#GET /api/sources",
+     "openapi/_original/newscatcher-news-api-openapi.yml#POST /api/sources"
+    ]
+   },
+   "nordic-financial-news": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "domain": "string",
+     "country": "string",
+     "source_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/nordic-financial-news-openapi-original.yml#GET /api/v1/sources",
+     "openapi/_original/nordic-financial-news-openapi.yml#GET /api/v1/sources"
+    ]
+   },
+   "opoint": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id_source": "integer",
+     "name": "string",
+     "url": "string",
+     "id_site": "integer"
+    },
+    "evidence": [
+     "openapi/_original/opoint-openapi-original.yml#GET /agreements/{id}/sources",
+     "openapi/_original/opoint-openapi.yml#GET /agreements/{id}/sources"
+    ]
+   },
+   "reefapi": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "ok": "boolean",
+     "data": null,
+     "meta": "object",
+     "error": "object",
+     "category": "string",
+     "country": "string"
+    },
+    "evidence": [
+     "openapi/_original/reefapi-openapi.json#POST /news-intel/v1/sources"
+    ]
+   },
+   "signal-ai": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "country": "string",
+     "subregion": "string",
+     "region": "string"
+    },
+    "evidence": [
+     "openapi/_original/signal-ai-openapi-original.json#GET /sources",
+     "openapi/_original/signal-ai-openapi-original.json#GET /sources/{id}"
+    ]
+   },
+   "stockdata": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "source_id": "string",
+     "domain": "string",
+     "language": "string"
+    },
+    "evidence": [
+     "openapi/_original/stockdata-openapi.yml#GET /news/sources"
+    ]
+   },
+   "the-news-api": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "source_id": "string",
+     "domain": "string",
+     "language": "string",
+     "locale": "string",
+     "categories": "array"
+    },
+    "evidence": [
+     "openapi/_original/the-news-api-openapi.yml#GET /news/sources"
+    ]
+   },
+   "thenewsapi": {
+    "segments": [
+     "sources"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "source_id": "string",
+     "domain": "string",
+     "language": "string",
+     "locale": "string",
+     "categories": "array"
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#GET /news/sources"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "adanos-market-sentiment-api",
+    "akta-pro",
+    "aligned-news",
+    "alpha-vantage",
+    "aol",
+    "apitube",
+    "associated-press",
+    "aylien",
+    "benzinga",
+    "bing-news",
+    "bitvore",
+    "bloomberg",
+    "bloomberg-apis",
+    "bloomberg-lp",
+    "cision",
+    "cryptocompare",
+    "cryptonews",
+    "currentsapi",
+    "dailyhunt",
+    "dow-jones",
+    "dow-jones-developer-platform",
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "event-registry",
+    "factiva",
+    "feedly",
+    "finnhub",
+    "gnews",
+    "google-news",
+    "guardian",
+    "itsgloria-ai",
+    "johns-hopkins-university",
+    "lobsters",
+    "mashable",
+    "mediastack",
+    "meltwater",
+    "messari",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "newswhip",
+    "newtqnia",
+    "nordic-financial-news",
+    "npr",
+    "opoint",
+    "perigon",
+    "philadelphia-inquirer",
+    "reefapi",
+    "refinitiv",
+    "reuters",
+    "s1-dev",
+    "serper",
+    "signal-ai",
+    "smartnews",
+    "spaceflight-news-api",
+    "stockdata",
+    "talkwalker",
+    "techcrunch",
+    "the-new-york-times",
+    "the-news-api",
+    "thecoinanalysis",
+    "thenewsapi",
+    "trint",
+    "trove",
+    "twitter-x",
+    "us-army",
+    "wegtultrarich",
+    "youscan"
+   ],
+   "kebab-case": [
+    "adanos-market-sentiment-api",
+    "akta-pro",
+    "aligned-news",
+    "api-league",
+    "apitube",
+    "aylien",
+    "benzinga",
+    "cryptocompare",
+    "cryptonews",
+    "currentsapi",
+    "dailyhunt",
+    "dow-jones",
+    "dow-jones-developer-platform",
+    "eod-historical",
+    "eodhd",
+    "feedly",
+    "finnhub",
+    "gnews",
+    "itsgloria-ai",
+    "mashable",
+    "meltwater",
+    "messari",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "opoint",
+    "philadelphia-inquirer",
+    "reefapi",
+    "refinitiv",
+    "signal-ai",
+    "smartnews",
+    "the-new-york-times",
+    "trint",
+    "worldnewsapi",
+    "youscan"
+   ],
+   "snake_case": [
+    "aol",
+    "aylien",
+    "benzinga",
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "johns-hopkins-university",
+    "meltwater",
+    "newscatcher",
+    "nordic-financial-news",
+    "opoint",
+    "reefapi",
+    "smartnews",
+    "talkwalker",
+    "twitter-x"
+   ],
+   "camelCase": [
+    "benzinga",
+    "bitvore",
+    "cryptocompare",
+    "event-registry",
+    "feedly",
+    "newscatcher",
+    "newswhip",
+    "perigon",
+    "reefapi",
+    "refinitiv",
+    "wegtultrarich",
+    "xignite"
+   ],
+   "other": [
+    "feedly",
+    "lobsters",
+    "reefapi",
+    "refinitiv",
+    "talkwalker",
+    "twitter-x",
+    "worldnewsapi"
+   ],
+   "PascalCase": [
+    "bloomberg",
+    "bloomberg-apis",
+    "newswhip",
+    "refinitiv",
+    "xignite"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "adanos-market-sentiment-api",
+    "akta-pro",
+    "aligned-news",
+    "alpha-vantage",
+    "aol",
+    "api-league",
+    "apitube",
+    "associated-press",
+    "aylien",
+    "benzinga",
+    "bing-news",
+    "bitvore",
+    "cision",
+    "cryptocompare",
+    "cryptonews",
+    "currentsapi",
+    "dailyhunt",
+    "dow-jones",
+    "dow-jones-developer-platform",
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "factiva",
+    "feedly",
+    "finnhub",
+    "gnews",
+    "google-news",
+    "guardian",
+    "itsgloria-ai",
+    "johns-hopkins-university",
+    "lobsters",
+    "mashable",
+    "mediastack",
+    "meltwater",
+    "messari",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "newswhip",
+    "newtqnia",
+    "nordic-financial-news",
+    "npr",
+    "opoint",
+    "perigon",
+    "refinitiv",
+    "reuters",
+    "s1-dev",
+    "signal-ai",
+    "smartnews",
+    "spaceflight-news-api",
+    "stockdata",
+    "talkwalker",
+    "techcrunch",
+    "the-new-york-times",
+    "the-news-api",
+    "thecoinanalysis",
+    "thenewsapi",
+    "trint",
+    "trove",
+    "twitter-x",
+    "us-army",
+    "wegtultrarich",
+    "worldnewsapi",
+    "youscan"
+   ],
+   "snake_case": [
+    "adanos-market-sentiment-api",
+    "akta-pro",
+    "aol",
+    "apitube",
+    "associated-press",
+    "aylien",
+    "benzinga",
+    "cryptocompare",
+    "cryptonews",
+    "currentsapi",
+    "dow-jones",
+    "dow-jones-developer-platform",
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "factiva",
+    "itsgloria-ai",
+    "johns-hopkins-university",
+    "mediastack",
+    "meltwater",
+    "new-york-times-company",
+    "newscatcher",
+    "nordic-financial-news",
+    "npr",
+    "opoint",
+    "smartnews",
+    "spaceflight-news-api",
+    "stockdata",
+    "talkwalker",
+    "techcrunch",
+    "the-new-york-times",
+    "the-news-api",
+    "thenewsapi",
+    "twitter-x"
+   ],
+   "camelCase": [
+    "benzinga",
+    "bing-news",
+    "bitvore",
+    "cryptocompare",
+    "dailyhunt",
+    "dow-jones",
+    "feedly",
+    "finnhub",
+    "mashable",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "opoint",
+    "perigon",
+    "philadelphia-inquirer",
+    "reuters",
+    "thecoinanalysis",
+    "trove",
+    "wegtultrarich",
+    "youscan"
+   ],
+   "other": [
+    "apitube",
+    "aylien",
+    "benzinga",
+    "cision",
+    "dow-jones",
+    "dow-jones-developer-platform",
+    "eod-historical",
+    "eodhd",
+    "factiva",
+    "newscatcher",
+    "opoint",
+    "techcrunch",
+    "trove",
+    "twitter-x"
+   ],
+   "kebab-case": [
+    "api-league",
+    "cryptonews",
+    "guardian",
+    "new-york-times-company",
+    "signal-ai",
+    "the-new-york-times",
+    "trint",
+    "trove",
+    "worldnewsapi"
+   ],
+   "PascalCase": [
+    "johns-hopkins-university",
+    "xignite"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "adanos-market-sentiment-api",
+    "akta-pro",
+    "aligned-news",
+    "api-league",
+    "bitvore",
+    "cryptocompare",
+    "dow-jones",
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "finnhub",
+    "itsgloria-ai",
+    "mediastack",
+    "new-york-times-company",
+    "newtqnia",
+    "nordic-financial-news",
+    "opoint",
+    "reuters",
+    "spaceflight-news-api",
+    "stockdata",
+    "the-new-york-times",
+    "the-news-api",
+    "thenewsapi",
+    "trint",
+    "trove",
+    "us-army"
+   ],
+   "page": [
+    "apitube",
+    "associated-press",
+    "benzinga",
+    "cryptocompare",
+    "cryptonews",
+    "dow-jones",
+    "gnews",
+    "guardian",
+    "itsgloria-ai",
+    "johns-hopkins-university",
+    "lobsters",
+    "mashable",
+    "meltwater",
+    "new-york-times-company",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "opoint",
+    "perigon",
+    "smartnews",
+    "stockdata",
+    "techcrunch",
+    "the-new-york-times",
+    "the-news-api",
+    "thecoinanalysis",
+    "thenewsapi"
+   ],
+   "offset": [
+    "adanos-market-sentiment-api",
+    "akta-pro",
+    "api-league",
+    "bing-news",
+    "bitvore",
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "mediastack",
+    "new-york-times-company",
+    "opoint",
+    "spaceflight-news-api",
+    "talkwalker",
+    "the-new-york-times",
+    "trove",
+    "us-army",
+    "worldnewsapi"
+   ],
+   "page_size": [
+    "associated-press",
+    "benzinga",
+    "bitvore",
+    "dailyhunt",
+    "dow-jones",
+    "guardian",
+    "mashable",
+    "meltwater",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "opoint",
+    "smartnews",
+    "xignite"
+   ],
+   "size": [
+    "dow-jones",
+    "feedly",
+    "meltwater",
+    "newswhip",
+    "perigon",
+    "signal-ai",
+    "youscan"
+   ],
+   "count": [
+    "bing-news",
+    "bitvore",
+    "dow-jones",
+    "feedly",
+    "refinitiv",
+    "xignite"
+   ],
+   "per_page": [
+    "apitube",
+    "aylien",
+    "johns-hopkins-university",
+    "techcrunch",
+    "thecoinanalysis"
+   ],
+   "cursor": [
+    "aylien",
+    "nordic-financial-news",
+    "opoint",
+    "refinitiv"
+   ],
+   "start": [
+    "bitvore",
+    "meltwater",
+    "messari",
+    "refinitiv"
+   ],
+   "skip": [
+    "dow-jones",
+    "finnhub",
+    "trint",
+    "youscan"
+   ],
+   "max_results": [
+    "benzinga",
+    "twitter-x"
+   ],
+   "after": [
+    "techcrunch"
+   ],
+   "before": [
+    "techcrunch"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "adanos-market-sentiment-api",
+    "aligned-news",
+    "apitube",
+    "bitvore",
+    "bloomberg-lp",
+    "dow-jones",
+    "dow-jones-developer-platform",
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "factiva",
+    "feedly",
+    "google-news",
+    "itsgloria-ai",
+    "johns-hopkins-university",
+    "lobsters",
+    "meltwater",
+    "messari",
+    "new-york-times-company",
+    "nordic-financial-news",
+    "opoint",
+    "perigon",
+    "philadelphia-inquirer",
+    "refinitiv",
+    "signal-ai",
+    "smartnews",
+    "spaceflight-news-api",
+    "stockdata",
+    "talkwalker",
+    "techcrunch",
+    "the-new-york-times",
+    "the-news-api",
+    "thecoinanalysis",
+    "thenewsapi",
+    "trint",
+    "trove",
+    "twitter-x",
+    "us-army"
+   ],
+   "camelCase": [
+    "apitube",
+    "associated-press",
+    "bitvore",
+    "cision",
+    "dow-jones",
+    "dow-jones-developer-platform",
+    "eod-historical",
+    "eodhd",
+    "factiva",
+    "feedly",
+    "guardian",
+    "johns-hopkins-university",
+    "meltwater",
+    "messari",
+    "npr",
+    "opoint",
+    "refinitiv",
+    "s1-dev",
+    "trint",
+    "trove",
+    "youscan"
+   ],
+   "snake_case": [
+    "akta-pro",
+    "associated-press",
+    "benzinga",
+    "dailyhunt",
+    "dow-jones",
+    "itsgloria-ai",
+    "lobsters",
+    "meltwater",
+    "new-york-times-company",
+    "newscatcher",
+    "opoint",
+    "smartnews",
+    "talkwalker",
+    "twitter-x"
+   ],
+   "PascalCase": [
+    "eod-historical",
+    "eodhd",
+    "feedly",
+    "newswhip"
+   ],
+   "other": [
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "newswhip"
+   ],
+   "kebab-case": [
+    "dow-jones",
+    "new-york-times-company",
+    "the-new-york-times"
+   ]
+  },
+  "property": {
+   "lower": [
+    "adanos-market-sentiment-api",
+    "akta-pro",
+    "aligned-news",
+    "apitube",
+    "aylien",
+    "bing-news",
+    "bitvore",
+    "cryptocompare",
+    "dow-jones",
+    "eod-historical",
+    "eodhd",
+    "epfl",
+    "finnhub",
+    "gnews",
+    "itsgloria-ai",
+    "johns-hopkins-university",
+    "mashable",
+    "mediastack",
+    "news-api",
+    "newsapi",
+    "newscatcher",
+    "newswhip",
+    "nordic-financial-news",
+    "opoint",
+    "reefapi",
+    "refinitiv",
+    "s1-dev",
+    "serper",
+    "signal-ai",
+    "spaceflight-news-api",
+    "stockdata",
+    "the-news-api",
+    "thenewsapi",
+    "twitter-x",
+    "us-army"
+   ],
+   "snake_case": [
+    "akta-pro",
+    "apitube",
+    "aylien",
+    "epfl",
+    "itsgloria-ai",
+    "johns-hopkins-university",
+    "mediastack",
+    "newscatcher",
+    "newswhip",
+    "nordic-financial-news",
+    "opoint",
+    "s1-dev",
+    "spaceflight-news-api",
+    "stockdata",
+    "the-news-api",
+    "thenewsapi",
+    "twitter-x"
+   ],
+   "camelCase": [
+    "aligned-news",
+    "bing-news",
+    "bitvore",
+    "dow-jones",
+    "gnews",
+    "mashable",
+    "news-api",
+    "newsapi",
+    "newswhip",
+    "opoint",
+    "refinitiv",
+    "serper",
+    "us-army"
+   ],
+   "other": [
+    "apitube",
+    "aylien",
+    "bing-news",
+    "cryptocompare",
+    "johns-hopkins-university"
+   ],
+   "PascalCase": [
+    "cryptocompare"
+   ]
+  }
+ }
+}

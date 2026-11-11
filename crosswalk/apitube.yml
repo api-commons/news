@@ -1,0 +1,38 @@
+provider: apitube
+apis_io: https://apis.io/providers/apitube/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - everything
+    - top-headlines
+    - article
+    properties:
+      name: title
+      description:
+      - description
+      - summary
+      published_at: published_at
+      id:
+      - id
+      - article.id
+      source_id:
+      - source
+      - source.id
+      body: body
+      categories:
+      - categories
+      - topics
+      - keywords
+      image_url: image
+      author: author
+      language: language
+      sentiment: sentiment
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/apitube-apex-openapi.json#GET /v1/news/everything
+    - openapi/_original/apitube-apex-openapi.json#GET /v1/news/top-headlines
+    - openapi/_original/apitube-api-openapi.json#POST /v1/news/article
+    - openapi/_original/apitube-api-openapi.json#POST /v1/news/everything
+    - openapi/_original/apitube-api-openapi.json#POST /v1/news/top-headlines

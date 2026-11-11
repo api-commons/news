@@ -1,0 +1,27 @@
+provider: us-army
+apis_io: https://apis.io/providers/us-army/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - article
+    - articles
+    - news
+    properties:
+      name:
+      - title
+      - headline
+      description: summary
+      published_at: publishedDate
+      id: id
+      source_id: source
+      body: body
+      categories: tags
+      image_url: imageUrl
+      author: author
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/us-army-public-openapi.yml#GET /article/{id}
+    - openapi/_original/us-army-public-openapi.yml#GET /articles
+    - openapi/_original/us-army-public-openapi.yml#GET /news

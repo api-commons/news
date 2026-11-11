@@ -1,0 +1,17 @@
+provider: serper
+apis_io: https://apis.io/providers/serper/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    properties:
+      name: title
+      description: snippet
+      published_at: date
+      source_id: source
+      image_url: imageUrl
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/serper-google-search-api-openapi.yml#POST /news

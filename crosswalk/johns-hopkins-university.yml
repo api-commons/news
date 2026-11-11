@@ -1,0 +1,16 @@
+provider: johns-hopkins-university
+apis_io: https://apis.io/providers/johns-hopkins-university/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - articles
+    properties:
+      id: id
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/johns-hopkins-university-hub-api-openapi.yml#GET /articles
+    - openapi/_original/johns-hopkins-university-hub-api-openapi.yml#GET /articles/{id}
+    - openapi/_original/johns-hopkins-university-hub-api.yaml#GET /articles
+    - openapi/_original/johns-hopkins-university-hub-api.yaml#GET /articles/{id}

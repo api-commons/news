@@ -1,0 +1,56 @@
+context: news
+name: News
+intro: >-
+  The common news vocabulary -- the news articles published and aggregated, and the sources that
+  publish them -- distilled from the APIs that already exist. Blog posts belong to content
+  management and help articles to the knowledge base.
+tags: [News, News API, Journalism, Media Monitoring, News Aggregation, Media Intelligence]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, totalResults, status]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, article_id, uri]
+  name: [title, headline, display_name]
+  description: [summary, abstract, snippet, excerpt, lead_paragraph, teaser]
+  url: [link, web_url, article_url, permalink, canonical_url]
+  published_at: [publishedAt, pub_date, published, date, datetime, published_date, first_published, date_published]
+  language: [lang, locale]
+
+concepts:
+  news_article:
+    path: /news-articles
+    segments: [articles, article, news, stories, headlines, top-headlines, everything, "content@news|search", "search@news|articles"]
+    aliases:
+      body: [content, text, full_text, body_text]
+      author: [authors, byline, creator, writer]
+      source_id: [source, publisher, source_name, domain, outlet]
+      image_url: [urlToImage, image, thumbnail, multimedia, lead_image]
+      categories: [category, section, topics, keywords, tags, subjects]
+      sentiment: [sentiment_score, tone]
+  news_source:
+    requires: [news_article]
+    path: /news-sources
+    segments: [sources, source, publishers, outlets, feeds@news]
+    aliases:
+      domain: [url, website, homepage]
+      country: [country_code, region]
+      category: [categories, topics]
+
+exclude:
+  news_article:
+    adanos-market-sentiment-api: /news/stocks/v1/search searches stock tickers
+duplicates:
+  factiva: [dow-jones]
+
+findings:
+  - "A news article agrees on title, description, publish date, id and its source across
+    aggregators, publishers and media-monitoring tools -- the headline record NewsAPI popularised,
+    which most of the category copied."
+  - "A news source agrees on name, category, language and country."
+decisions:
+  - "Articles are `/news-articles` and sources `/news-sources`: the knowledge base owns
+    `/articles`, and a bare `/sources` means something else in most contexts."
+  - "Stories, headlines and news search results are news articles."
+  - "Duplicates merged: Dow Jones into Factiva."

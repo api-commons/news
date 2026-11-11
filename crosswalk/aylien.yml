@@ -1,0 +1,13 @@
+provider: aylien
+apis_io: https://apis.io/providers/aylien/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - stories
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/news-api.yaml#GET /stories
+    - openapi/_original/news-api.yaml#POST /stories

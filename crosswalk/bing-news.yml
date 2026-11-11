@@ -1,0 +1,15 @@
+provider: bing-news
+apis_io: https://apis.io/providers/bing-news/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - search
+    - news
+    properties:
+      id: id
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/bing-news-search-openapi.json#GET /news
+    - openapi/_original/bing-news-search-openapi.json#GET /news/search

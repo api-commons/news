@@ -1,0 +1,116 @@
+openapi: 3.1.0
+info:
+  title: News (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common News interface, distilled from the harvested OpenAPI of 73 providers in the APIs.io catalog.
+    Not a product: no one serves this API. It is the shape the market already shares, measured, so that providers,
+    agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /news-articles:
+    get:
+      operationId: listNewsArticles
+      summary: List news articles
+      tags:
+      - News Articles
+      x-commons-tier: core
+      x-commons-share: 0.839
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/NewsArticle'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createNewsArticle
+      summary: Create a news article
+      tags:
+      - News Articles
+      x-commons-tier: extended
+      x-commons-share: 0.258
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /news-articles/{news_article_id}:
+    parameters:
+    - $ref: '#/components/parameters/news_article_id'
+    get:
+      operationId: getNewsArticle
+      summary: Get a news article
+      tags:
+      - News Articles
+      x-commons-tier: extended
+      x-commons-share: 0.323
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /news-sources:
+    get:
+      operationId: listNewsSources
+      summary: List news sources
+      tags:
+      - News Sources
+      x-commons-tier: core
+      x-commons-share: 0.9
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/NewsSource'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+components:
+  schemas:
+    NewsArticle:
+      $ref: ./schema/news_article.json
+    NewsSource:
+      $ref: ./schema/news_source.json
+  parameters:
+    news_article_id:
+      name: news_article_id
+      in: path
+      required: true
+      schema:
+        type: string
+    news_source_id:
+      name: news_source_id
+      in: path
+      required: true
+      schema:
+        type: string

@@ -1,0 +1,21 @@
+provider: mashable
+apis_io: https://apis.io/providers/mashable/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - top-headlines
+    - everything
+    properties:
+      name: title
+      description: description
+      published_at: publishedAt
+      source_id: source
+      body: content
+      image_url: urlToImage
+      author: author
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/mashable-openapi.yml#GET /everything
+    - openapi/_original/mashable-openapi.yml#GET /top-headlines

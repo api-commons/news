@@ -1,0 +1,19 @@
+provider: twitter-x
+apis_io: https://apis.io/providers/twitter-x/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - search
+    - news
+    properties:
+      name: name
+      description: summary
+      categories:
+      - category
+      - keywords
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/news/search
+    - openapi/_original/twitter-x-x-api-v2-openapi.json#GET /2/news/{id}

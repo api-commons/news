@@ -1,0 +1,22 @@
+provider: bitvore
+apis_io: https://apis.io/providers/bitvore/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - news
+    properties:
+      name: title
+      description: excerpt
+      published_at: publishedAt
+      source_id: sourceName
+      body: text
+      sentiment: sentiment
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/bitvore-corporate-openapi.yml#GET /v2/corp/news
+    - openapi/_original/bitvore-corporate-openapi.yml#POST /v2/corp/news
+    - openapi/_original/bitvore-corporate-swagger.json#GET /v2/corp/news
+    - openapi/_original/bitvore-corporate-swagger.json#POST /v2/corp/news
+    - openapi/_original/bitvore-muni-openapi.yml#GET /v2/muni/news

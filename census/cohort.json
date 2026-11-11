@@ -1,0 +1,613 @@
+[
+ {
+  "slug": "adanos-market-sentiment-api",
+  "specs": [
+   "openapi/_original/adanos-market-sentiment-api-news-openapi.yaml",
+   "openapi/_original/adanos-market-sentiment-api-openapi.json",
+   "openapi/_original/adanos-market-sentiment-api-polymarket-openapi.yaml",
+   "openapi/_original/adanos-market-sentiment-api-reddit-crypto-openapi.yaml",
+   "openapi/_original/adanos-market-sentiment-api-reddit-openapi.yaml",
+   "openapi/_original/adanos-market-sentiment-api-sentiment-openapi.yaml",
+   "openapi/_original/adanos-market-sentiment-api-x-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "akta-pro",
+  "specs": [
+   "openapi/_original/akta-pro-docs-openapi.json",
+   "openapi/_original/akta-pro-openapi.yml"
+  ]
+ },
+ {
+  "slug": "aligned-news",
+  "specs": [
+   "openapi/_original/aligned-news-openapi.yml"
+  ]
+ },
+ {
+  "slug": "alpha-vantage",
+  "specs": [
+   "openapi/_original/alpha-vantage-plugin-openapi.json"
+  ]
+ },
+ {
+  "slug": "aol",
+  "specs": [
+   "openapi/_original/aol-openapi.yml"
+  ]
+ },
+ {
+  "slug": "api-league",
+  "specs": [
+   "openapi/_original/api-league-art-openapi.yml",
+   "openapi/_original/api-league-books-openapi.yml",
+   "openapi/_original/api-league-food-openapi.yml",
+   "openapi/_original/api-league-games-openapi.yml",
+   "openapi/_original/api-league-humor-openapi.yml",
+   "openapi/_original/api-league-knowledge-openapi.yml",
+   "openapi/_original/api-league-math-openapi.yml",
+   "openapi/_original/api-league-media-openapi.yml",
+   "openapi/_original/api-league-news-openapi.yml",
+   "openapi/_original/api-league-openapi.json",
+   "openapi/_original/api-league-storage-openapi.yml",
+   "openapi/_original/api-league-text-openapi.yml",
+   "openapi/_original/api-league-web-openapi.yml"
+  ]
+ },
+ {
+  "slug": "apitube",
+  "specs": [
+   "openapi/_original/apitube-apex-openapi.json",
+   "openapi/_original/apitube-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "associated-press",
+  "specs": [
+   "openapi/_original/associated-press-meda-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "aylien",
+  "specs": [
+   "openapi/_original/news-api.yaml",
+   "openapi/_original/text-api.yaml"
+  ]
+ },
+ {
+  "slug": "benzinga",
+  "specs": [
+   "openapi/_original/benzinga-analyst-reports-raw-text-api-openapi.yml",
+   "openapi/_original/benzinga-calendar-api-openapi.yml",
+   "openapi/_original/benzinga-data-api-proxy-openapi.yml",
+   "openapi/_original/benzinga-delivery-api-openapi.yml",
+   "openapi/_original/benzinga-logo-api-openapi.yml",
+   "openapi/_original/benzinga-newsquantified-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bing-news",
+  "specs": [
+   "openapi/_original/bing-news-search-openapi.json"
+  ]
+ },
+ {
+  "slug": "bitvore",
+  "specs": [
+   "openapi/_original/bitvore-corporate-openapi.yml",
+   "openapi/_original/bitvore-corporate-swagger.json",
+   "openapi/_original/bitvore-custom-api-it-openapi.yml",
+   "openapi/_original/bitvore-custom-api-it-swagger.json",
+   "openapi/_original/bitvore-custom-api-l-openapi.yml",
+   "openapi/_original/bitvore-custom-api-l-swagger.json",
+   "openapi/_original/bitvore-legacy-openapi.yml",
+   "openapi/_original/bitvore-legacy-swagger.json",
+   "openapi/_original/bitvore-muni-openapi.yml",
+   "openapi/_original/bitvore-muni-swagger.json",
+   "openapi/_original/bitvore-security-openapi.yml",
+   "openapi/_original/bitvore-security-swagger.json"
+  ]
+ },
+ {
+  "slug": "bloomberg",
+  "specs": [
+   "openapi/_original/blpapi-core.yml"
+  ]
+ },
+ {
+  "slug": "bloomberg-apis",
+  "specs": [
+   "openapi/_original/bloomberg-blpapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bloomberg-lp",
+  "specs": [
+   "openapi/_original/openfigi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cision",
+  "specs": [
+   "openapi/_original/cision-cisionone-openapi.json",
+   "openapi/_original/cision-cisionone-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cryptocompare",
+  "specs": [
+   "openapi/_original/cryptocompare-data-api-openapi.yml",
+   "openapi/_original/cryptocompare-min-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cryptonews",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "currentsapi",
+  "specs": [
+   "openapi/_original/currentsapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "dailyhunt",
+  "specs": [
+   "openapi/_original/dailyhunt-content-syndication-openapi.yml",
+   "openapi/_original/dailyhunt-shopping-catalog-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dow-jones",
+  "specs": [
+   "openapi/_original/dow-jones-advanced-screening-and-monitoring-api-openapi.json",
+   "openapi/_original/dow-jones-calendar-live-api-openapi.json",
+   "openapi/_original/dow-jones-company-news-radar-api-openapi.json",
+   "openapi/_original/dow-jones-content-api-swagger.json",
+   "openapi/_original/dow-jones-due-diligence-reports-api-openapi.json",
+   "openapi/_original/dow-jones-newsletters-api-openapi.json",
+   "openapi/_original/dow-jones-newswires-content-api-openapi.json",
+   "openapi/_original/dow-jones-newswires-real-time-api-openapi.json",
+   "openapi/_original/dow-jones-profile-version-history-api-openapi.json",
+   "openapi/_original/dow-jones-risk-profiles-api-openapi.json",
+   "openapi/_original/dow-jones-risk-search-api-openapi.json",
+   "openapi/_original/dow-jones-risk-taxonomy-api-openapi.json",
+   "openapi/_original/dow-jones-riskcenter-third-party-api-0-1-openapi.json",
+   "openapi/_original/dow-jones-riskcenter-third-party-api-0-2-openapi.json",
+   "openapi/_original/dow-jones-screening-and-monitoring-api-openapi.json",
+   "openapi/_original/dow-jones-screening-and-monitoring-private-lists-api-openapi.json",
+   "openapi/_original/dow-jones-top-stories-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "dow-jones-developer-platform",
+  "specs": [
+   "openapi/_original/dow-jones-developer-platform-calendar-live-api.json",
+   "openapi/_original/dow-jones-developer-platform-company-news-radar-api.json",
+   "openapi/_original/dow-jones-developer-platform-factiva-content-api.json",
+   "openapi/_original/dow-jones-developer-platform-factiva-newsletters-api.json",
+   "openapi/_original/dow-jones-developer-platform-newswires-content-api.json",
+   "openapi/_original/dow-jones-developer-platform-newswires-real-time-api.json",
+   "openapi/_original/dow-jones-developer-platform-newswires-top-stories-api.json",
+   "openapi/_original/dow-jones-developer-platform-riskcenter-third-party-api-0-1-openapi.yml",
+   "openapi/_original/dow-jones-developer-platform-riskcenter-third-party-api-0-1.json",
+   "openapi/_original/dow-jones-developer-platform-riskcenter-third-party-api-0-2-openapi.yml",
+   "openapi/_original/dow-jones-developer-platform-riskcenter-third-party-api-0-2.json"
+  ]
+ },
+ {
+  "slug": "eod-historical",
+  "specs": [
+   "openapi/_original/openapi.yaml"
+  ]
+ },
+ {
+  "slug": "eodhd",
+  "specs": [
+   "openapi/_original/eodhd-eod-historical-data-openapi.yml",
+   "openapi/_original/eodhd-financial-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "epfl",
+  "specs": [
+   "openapi/_original/epfl-actu.yaml",
+   "openapi/_original/epfl-getprime-api-openapi.yml",
+   "openapi/_original/epfl-memento.yaml"
+  ]
+ },
+ {
+  "slug": "event-registry",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "factiva",
+  "specs": [
+   "openapi/_original/factiva-company-news-radar-api-openapi.json",
+   "openapi/_original/factiva-content-api-swagger.json",
+   "openapi/_original/factiva-newsletters-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "feedly",
+  "specs": [
+   "openapi/_original/feedly-agents-openapi-original.json",
+   "openapi/_original/feedly-agents-openapi.yml",
+   "openapi/_original/feedly-alerts-openapi-original.json",
+   "openapi/_original/feedly-alerts-openapi.yml",
+   "openapi/_original/feedly-annotations-openapi-original.json",
+   "openapi/_original/feedly-annotations-openapi.yml",
+   "openapi/_original/feedly-enterprise-collections-openapi-original.json",
+   "openapi/_original/feedly-enterprise-collections-openapi.yml",
+   "openapi/_original/feedly-enterprise-openapi-original.json",
+   "openapi/_original/feedly-enterprise-openapi.yml",
+   "openapi/_original/feedly-enterprise-users-openapi-original.json",
+   "openapi/_original/feedly-enterprise-users-openapi.yml",
+   "openapi/_original/feedly-entities-openapi-original.json",
+   "openapi/_original/feedly-entities-openapi.yml",
+   "openapi/_original/feedly-entries-openapi-original.json",
+   "openapi/_original/feedly-entries-openapi.yml",
+   "openapi/_original/feedly-intel-profiles-openapi-original.json",
+   "openapi/_original/feedly-intel-profiles-openapi.yml",
+   "openapi/_original/feedly-iocs-openapi-original.json",
+   "openapi/_original/feedly-iocs-openapi.yml",
+   "openapi/_original/feedly-memes-openapi-original.json",
+   "openapi/_original/feedly-memes-openapi.yml",
+   "openapi/_original/feedly-ml-openapi-original.json",
+   "openapi/_original/feedly-ml-openapi.yml",
+   "openapi/_original/feedly-search-openapi-original.json",
+   "openapi/_original/feedly-search-openapi.yml",
+   "openapi/_original/feedly-streams-openapi-original.json",
+   "openapi/_original/feedly-streams-openapi.yml",
+   "openapi/_original/feedly-tags-openapi-original.json",
+   "openapi/_original/feedly-tags-openapi.yml",
+   "openapi/_original/feedly-ti-endpoints-openapi-original.json",
+   "openapi/_original/feedly-ti-endpoints-openapi.yml",
+   "openapi/_original/feedly-trends-openapi-original.json",
+   "openapi/_original/feedly-trends-openapi.yml",
+   "openapi/_original/feedly-vulnerability-agent-openapi-original.json",
+   "openapi/_original/feedly-vulnerability-agent-openapi.yml"
+  ]
+ },
+ {
+  "slug": "finnhub",
+  "specs": [
+   "openapi/_original/finnhub-openapi.yml",
+   "openapi/_original/finnhub-swagger-original.json"
+  ]
+ },
+ {
+  "slug": "gnews",
+  "specs": [
+   "openapi/_original/gnews-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-news",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "guardian",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "itsgloria-ai",
+  "specs": [
+   "openapi/_original/itsgloria-ai-openapi.json",
+   "openapi/_original/itsgloria-ai-openapi.yml"
+  ]
+ },
+ {
+  "slug": "johns-hopkins-university",
+  "specs": [
+   "openapi/_original/johns-hopkins-university-hub-api-openapi.yml",
+   "openapi/_original/johns-hopkins-university-hub-api.yaml",
+   "openapi/_original/johns-hopkins-university-sis-course-search.yaml"
+  ]
+ },
+ {
+  "slug": "lobsters",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "mashable",
+  "specs": [
+   "openapi/_original/mashable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mediastack",
+  "specs": [
+   "openapi/_original/mediastack-openapi.yml"
+  ]
+ },
+ {
+  "slug": "meltwater",
+  "specs": [
+   "openapi/_original/meltwater-api-openapi.yaml",
+   "openapi/_original/meltwater-api-v4-openapi.yaml",
+   "openapi/_original/meltwater-api-v4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "messari",
+  "specs": [
+   "openapi/_original/messari-openapi.yml"
+  ]
+ },
+ {
+  "slug": "new-york-times-company",
+  "specs": [
+   "openapi/_original/archive-api-openapi.yml",
+   "openapi/_original/article-search-v2-openapi.yml",
+   "openapi/_original/books-api-openapi.yml",
+   "openapi/_original/community-api-v3-openapi.yml",
+   "openapi/_original/geo-api-v2-openapi.yml",
+   "openapi/_original/most-popular-api-v2-openapi.yml",
+   "openapi/_original/movie-reviews-v2-openapi.yml",
+   "openapi/_original/semantic-api-openapi.yml",
+   "openapi/_original/times-tags-v3-openapi.yml",
+   "openapi/_original/timeswire-v3-openapi.yml",
+   "openapi/_original/top-stories-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "news-api",
+  "specs": [
+   "openapi/_original/news-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "newsapi",
+  "specs": [
+   "openapi/_original/newsapi-newsapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "newscatcher",
+  "specs": [
+   "openapi/_original/newscatcher-local-news-api-openapi.yml",
+   "openapi/_original/newscatcher-news-api-openapi.yml",
+   "openapi/_original/newscatcher-web-search-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "newswhip",
+  "specs": [
+   "openapi/_original/newswhip-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "newtqnia",
+  "specs": [
+   "openapi/_original/newtqnia-daily-digest-api.yaml",
+   "openapi/_original/newtqnia-daily-digest-api_2.yaml"
+  ]
+ },
+ {
+  "slug": "nordic-financial-news",
+  "specs": [
+   "openapi/_original/nordic-financial-news-openapi-original.yml",
+   "openapi/_original/nordic-financial-news-openapi.yml"
+  ]
+ },
+ {
+  "slug": "npr",
+  "specs": [
+   "openapi/_original/npr-authorization-openapi-original.yml",
+   "openapi/_original/npr-identity-openapi-original.yml",
+   "openapi/_original/npr-station-finder-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "opoint",
+  "specs": [
+   "openapi/_original/opoint-openapi-original.yml",
+   "openapi/_original/opoint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "perigon",
+  "specs": [
+   "openapi/_original/perigon-openapi.json",
+   "openapi/_original/perigon-openapi.yml"
+  ]
+ },
+ {
+  "slug": "philadelphia-inquirer",
+  "specs": [
+   "openapi/_original/dewey-mcp-openapi.yml",
+   "openapi/_original/rss-openapi.yml",
+   "openapi/_original/sitemaps-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reefapi",
+  "specs": [
+   "openapi/_original/reefapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "refinitiv",
+  "specs": [
+   "openapi/_original/refinitiv-data-platform-openapi.yml",
+   "openapi/_original/refinitiv-datascope-select-openapi.yml",
+   "openapi/_original/refinitiv-permid-entity-search-openapi.yml",
+   "openapi/_original/refinitiv-qual-id-openapi.yml",
+   "openapi/_original/refinitiv-world-check-one-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reuters",
+  "specs": [
+   "openapi/_original/reuters-connect-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "s1-dev",
+  "specs": [
+   "openapi/_original/s1-dev-openapi.yml",
+   "openapi/_original/search1api-openapi.json"
+  ]
+ },
+ {
+  "slug": "serper",
+  "specs": [
+   "openapi/_original/serper-google-search-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signal-ai",
+  "specs": [
+   "openapi/_original/signal-ai-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "smartnews",
+  "specs": [
+   "openapi/_original/smartnews-marketing-openapi.json"
+  ]
+ },
+ {
+  "slug": "spaceflight-news-api",
+  "specs": [
+   "openapi/_original/spaceflight-news-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "stockdata",
+  "specs": [
+   "openapi/_original/stockdata-openapi.yml"
+  ]
+ },
+ {
+  "slug": "talkwalker",
+  "specs": [
+   "openapi/_original/talkwalker-documents-openapi.yml",
+   "openapi/_original/talkwalker-histogram-openapi.yml",
+   "openapi/_original/talkwalker-image-openapi.yml",
+   "openapi/_original/talkwalker-openapi.yaml",
+   "openapi/_original/talkwalker-resources-openapi.yml",
+   "openapi/_original/talkwalker-search-openapi.yml",
+   "openapi/_original/talkwalker-status-openapi.yml",
+   "openapi/_original/talkwalker-streaming-openapi.yml"
+  ]
+ },
+ {
+  "slug": "techcrunch",
+  "specs": [
+   "openapi/_original/techcrunch-wordpress-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "the-new-york-times",
+  "specs": [
+   "openapi/_original/new-york-times-archive-openapi-original.yml",
+   "openapi/_original/new-york-times-article-search-openapi-original.yml",
+   "openapi/_original/new-york-times-movie-review-openapi-original.yml",
+   "openapi/_original/new-york-times-semantic-openapi-original.yml",
+   "openapi/_original/new-york-times-times-newswire-openapi-original.yml",
+   "openapi/_original/new-york-times-times-tags-openapi-original.yml",
+   "openapi/_original/new-york-times-top-stories-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "the-news-api",
+  "specs": [
+   "openapi/_original/the-news-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thecoinanalysis",
+  "specs": [
+   "openapi/_original/spec.json"
+  ]
+ },
+ {
+  "slug": "thenewsapi",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "trint",
+  "specs": [
+   "openapi/_original/trint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "trove",
+  "specs": [
+   "openapi/_original/trove-api-v3.yaml",
+   "openapi/_original/trove-openapi.yml"
+  ]
+ },
+ {
+  "slug": "twitter-x",
+  "specs": [
+   "openapi/_original/twitter-x-x-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "us-army",
+  "specs": [
+   "openapi/_original/us-army-public-openapi.yml"
+  ]
+ },
+ {
+  "slug": "wegtultrarich",
+  "specs": [
+   "openapi/_original/wegtultrarich-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "worldnewsapi",
+  "specs": [
+   "openapi/_original/worldnewsapi-openapi-original.json",
+   "openapi/_original/worldnewsapi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xignite",
+  "specs": [
+   "openapi/_original/xignite-bonds-openapi.json",
+   "openapi/_original/xignite-cloud-alerts-openapi.json",
+   "openapi/_original/xignite-cloud-files-openapi.json",
+   "openapi/_original/xignite-crypto-openapi.json",
+   "openapi/_original/xignite-earnings-calendar-openapi.json",
+   "openapi/_original/xignite-factset-fundamentals-openapi.json",
+   "openapi/_original/xignite-global-corporate-actions-openapi.json",
+   "openapi/_original/xignite-global-currencies-openapi.json",
+   "openapi/_original/xignite-global-esg-openapi.json",
+   "openapi/_original/xignite-global-fund-fundamentals-openapi.json",
+   "openapi/_original/xignite-global-futures-openapi.json",
+   "openapi/_original/xignite-global-historical-openapi.json",
+   "openapi/_original/xignite-global-holidays-openapi.json",
+   "openapi/_original/xignite-global-indices-openapi.json",
+   "openapi/_original/xignite-global-master-openapi.json",
+   "openapi/_original/xignite-global-metals-openapi.json",
+   "openapi/_original/xignite-global-news-openapi.json",
+   "openapi/_original/xignite-global-options-openapi.json",
+   "openapi/_original/xignite-global-quotes-openapi.json",
+   "openapi/_original/xignite-global-real-time-openapi.json",
+   "openapi/_original/xignite-money-markets-openapi.json",
+   "openapi/_original/xignite-navs-openapi.json"
+  ]
+ },
+ {
+  "slug": "youscan",
+  "specs": [
+   "openapi/_original/youscan-openapi.yaml"
+  ]
+ }
+]

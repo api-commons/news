@@ -1,0 +1,31 @@
+provider: opoint
+apis_io: https://apis.io/providers/opoint/
+context: news
+generated: '2026-11-11'
+concepts:
+  news_article:
+    path_segment:
+    - articles
+    properties:
+      name: headline
+      description: summary
+      id: id
+      source_id: sourceName
+      author: author
+      sentiment: sentiment
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/opoint-openapi-original.yml#GET /alerts/{id}/articles/
+    - openapi/_original/opoint-openapi-original.yml#GET /analytics/articles
+    - openapi/_original/opoint-openapi-original.yml#POST /alerts/{id}/articles/
+    - openapi/_original/opoint-openapi-original.yml#POST /analytics/articles
+    - openapi/_original/opoint-openapi-original.yml#POST /search/articles/
+  news_source:
+    path_segment:
+    - sources
+    properties:
+      name: name
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/opoint-openapi-original.yml#GET /agreements/{id}/sources
+    - openapi/_original/opoint-openapi.yml#GET /agreements/{id}/sources
